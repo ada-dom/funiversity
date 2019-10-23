@@ -27,6 +27,14 @@ public class Professor {
         return lastname;
     }
 
+    public void changeFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public void changeLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

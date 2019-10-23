@@ -9,8 +9,9 @@ public class ProfessorDto {
         return id;
     }
 
-    public void setId(String id) {
+    public ProfessorDto setId(String id) {
         this.id = id;
+        return this;
     }
 
     public String getFirstname() {

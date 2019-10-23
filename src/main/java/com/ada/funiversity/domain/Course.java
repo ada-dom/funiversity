@@ -42,4 +42,12 @@ public class Course {
         }
         return studyPoints;
     }
+
+    public static int getMinStudyPoints() {
+        return MIN_STUDY_POINTS;
+    }
+
+    public static int getMaxStudyPoints() {
+        return MAX_STUDY_POINTS;
+    }
 }

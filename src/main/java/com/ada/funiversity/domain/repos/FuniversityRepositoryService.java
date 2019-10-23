@@ -5,6 +5,9 @@ import com.ada.funiversity.domain.Professor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Component
@@ -37,5 +40,17 @@ public class FuniversityRepositoryService {
 
     public Course getCourseById(String id) {
         return coursesRepository.getCourseById(id);
+    }
+
+    public Collection<Professor> getProfessors() {
+        return professorsRepository.getProfessors();
+    }
+
+    public Collection<Course> getCourses(int studyPointsFilter) {
+        return coursesRepository.getCourses(studyPointsFilter);
+    }
+
+    public Professor delete(String id) {
+        return professorsRepository.delete(id);
     }
 }
